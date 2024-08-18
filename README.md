@@ -13,9 +13,9 @@
 
 #### 使用说明
 
-1.  镜像站：
-1. [github.io镜像](https://benpaodexiaozhi.github.io/)
-2. [vercel镜像](https://files.meng-ladder.us.kg/)
+镜像站：
+1. [github.io镜像](https://benpaodexiaozhi.github.io/)(ping：198ms)
+2. [vercel镜像](https://files.meng-ladder.us.kg/)(ping：82ms)
 
 
 #### 特技
