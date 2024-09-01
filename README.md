@@ -18,5 +18,5 @@
 2. [vercel镜像](https://files.meng-ladder.us.kg/)(ping：82ms)
 
 #### 鸣谢
-MomoTalkCreater，提供了立绘表情差分图(Image文件夹内FacialImage和HeadIcon)([项目url]https://gitee.com/honoki/momo-talk)
+MomoTalkCreater，提供了立绘表情差分图(Image文件夹内FacialImage和HeadIcon)([项目url]https://gitee.com/honoki/momo-talk)\n
 蔚蓝档案剧情站，提供了剧情音效、音乐、语音、文本等大量信息([项目url]https://bluearchive.io)
