@@ -9,7 +9,7 @@
 
 #### 安装教程
 
-1.  这玩意用不着安装吧...![](Image/FaceImage/hina/hina_(11).webp)
+1.  这玩意用不着安装吧...![你要拿这玩意安装？？？](Image/FaceImage/hina/hina_(11).webp)
 
 #### 使用说明
 
