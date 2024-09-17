@@ -16,7 +16,7 @@
 镜像站：
 1. [github.io镜像](https://benpaodexiaozhi.github.io/)<s>(慢死了慢死了！)</s>国内用户真的不建议，挂加速器倒可以
 2. [cloudflare镜像](https://files.meng-ladder.us.kg/)
-3. [cloudflare镜像](https://files.meng-files.us.kg/)还不错啊，速度也挺快
+3. [cloudflare镜像](https://files.meng-files.us.kg/)
 4. [vercel镜像](https://files.meng-ccw.us.kg/)
 
 #### 鸣谢
