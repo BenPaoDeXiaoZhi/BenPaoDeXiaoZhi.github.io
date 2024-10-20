@@ -24,6 +24,6 @@ MomoTalkCreater，提供了立绘表情差分图(Image文件夹内FacialImage和
 蔚蓝档案剧情站，提供了剧情音效、音乐、语音、文本等大量信息([项目url](https://blue-archive.io/))<s>(大佬好厉害！)</s>
 
 #### 备忘录
-https://blue-archive.io/ 蔚蓝档案剧情站 
-https://ba.svdex.moe/jp/live2d/ l2d素材 
-https://wanderer.moe/ 二游素材大集结 
+https://blue-archive.io/ 蔚蓝档案剧情站  
+https://ba.svdex.moe/jp/live2d/ l2d素材  
+https://wanderer.moe/ 二游素材大集结  
