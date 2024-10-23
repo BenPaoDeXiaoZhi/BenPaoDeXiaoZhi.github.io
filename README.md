@@ -27,3 +27,4 @@ MomoTalkCreater，提供了立绘表情差分图(Image文件夹内FacialImage和
 https://blue-archive.io/ 蔚蓝档案剧情站  
 https://ba.svdex.moe/jp/live2d/ l2d素材  
 https://wanderer.moe/ 二游素材大集结  
+https://wiki.biligame.com/ba/Momotalk/ momotalk素材  
