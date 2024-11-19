@@ -15,7 +15,7 @@ def walk_dir(dir):
     except:
         pass
     print(dir_list)
-    index_html = '<!DOCTYPE html><head><meta charset="unicode"><title>Meng Files @%s</title></head><html><body>'%(('/'+dir).replace('//','/'))
+    index_html = '<!DOCTYPE html><head><meta charset="utf-8"><title>Meng Files @%s</title></head><html><body>'%(('/'+dir).replace('//','/'))
     try:
         index_html += '<a href=/%s>./<a/><br><br>'%os.path.join(*(('/'+dir).replace('//','/')).split('/')[:-1])
     except Exception as E:
@@ -24,7 +24,7 @@ def walk_dir(dir):
     for i in dir_list:
         index_html += '<a href=%s>%s:%s</a><br>'%(dir+'/'+i,os.path.isdir(root_dir+dir+'/'+i),i)
     index_html += '</body></html>'
-    open(root_dir+'/'+dir+'/index.html','w').write(index_html)
+    open(root_dir+'/'+dir+'/index.html','w',encoding='utf-8').write(index_html)
     for i in dir_list:
         if os.path.isdir(root_dir+dir+'/'+i):
             print(root_dir + dir + '/'+i)
