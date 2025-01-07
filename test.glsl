@@ -1,7 +1,7 @@
 
 #version 300 es
 #ifdef GL_ES
-precision mediump float; // 设置浮点类型的默认精度
+precision mediump float;// 设置浮点类型的默认精度
 #endif
 // *** 警告：不要更改上面的代码 *** //
 // 关于在 Gandi IDE 中使用着色器的更多信息，请访问：https://getgandi.com/extensions/glsl-in-gandi-ide
@@ -12,9 +12,9 @@ precision mediump float; // 设置浮点类型的默认精度
 //#step:1
 
 // *** 默认变量 *** //
-uniform bool byp; // 绕过标志，用于启用或禁用着色器效果
-in vec2 vUv; // 传递给片段着色器的纹理坐标
-out vec4 fragColor; // 输出片段颜色
+uniform bool byp;// 绕过标志，用于启用或禁用着色器效果
+in vec2 vUv;// 传递给片段着色器的纹理坐标
+out vec4 fragColor;// 输出片段颜色
 
 // 当定义以下行时，当前屏幕内容作为纹理传递给变量 'tDiffuse'。
 // 注释掉或更改 'tDiffuse' 的名字将自动禁用此功能。
@@ -29,12 +29,13 @@ uniform texture tDiffuse;
 // 每个瓦片中纹理样本数的外部输入
 // uniform float textureSamplesCount;
 
-void main() {
-    if (!byp) {
-        vec4 
-        fragColor = texture()
-    } else {
+void main(){
+    if(!byp){
+        vec4 outColor;
+        outColor=vec4(texture(tDiffuse,vUv)[2])
+        fragColor=outColor
+    }else{
         // 如果启用了绕过，使用原始纹理颜色
-        fragColor = texture(tDiffuse, vUv);
+        fragColor=texture(tDiffuse,vUv);
     }
 }
