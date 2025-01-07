@@ -1,7 +1,6 @@
-
 #version 300 es
 #ifdef GL_ES
-precision mediump float; // 设置浮点类型的默认精度
+precision mediump float;// 设置浮点类型的默认精度
 #endif
 // *** 警告：不要更改上面的代码 *** //
 // 关于在 Gandi IDE 中使用着色器的更多信息，请访问：https://getgandi.com/extensions/glsl-in-gandi-ide
@@ -12,29 +11,37 @@ precision mediump float; // 设置浮点类型的默认精度
 //#step:1
 
 // *** 默认变量 *** //
-uniform bool byp; // 绕过标志，用于启用或禁用着色器效果
-in vec2 vUv; // 传递给片段着色器的纹理坐标
-out vec4 fragColor; // 输出片段颜色
+uniform bool byp;// 绕过标志，用于启用或禁用着色器效果
+in vec2 vUv;// 传递给片段着色器的纹理坐标
+out vec4 fragColor;// 输出片段颜色
 
 // 当定义以下行时，当前屏幕内容作为纹理传递给变量 'tDiffuse'。
 // 注释掉或更改 'tDiffuse' 的名字将自动禁用此功能。
-uniform texture tDiffuse;
+uniform sampler2D tDiffuse;
 
-// 取消注释，可以启用计时器， 如果启动了计时器，上面设置的 step 才会生效。 此示例项目不需要使用计时器
-//uniform float time;
+uniform float time;
 
 // *** 从这里开始编写你的代码 *** //
-// 马赛克效果中每个瓦片的大小的外部输入
-// uniform float tileSize;
-// 每个瓦片中纹理样本数的外部输入
-// uniform float textureSamplesCount;
+uniform float platX;
+uniform float platY;
+uniform float i_width;
 
-void main() {
-    if (!byp) {
-        vec4 
-        fragColor = texture()
-    } else {
+void main(){
+    float offset=-time/30.;
+    float width=(i_width==0.)?.03:i_width;
+    if(!byp && texture(tDiffuse,vUv)[3]!=0.){
+        vec4 outColor;
+        vec4 mask_color=vec4(.31,.43,.661,1.);
+        outColor=(texture(tDiffuse,vUv)+mask_color)/2.;
+        if(mod(vUv.y+offset,width) >= (width/4.) && mod(vUv.y+offset,width) <= (width-width/4.)){
+            outColor=(outColor*1.2);
+        }else if(mod(vUv.y+offset,width) <= (width/6.) || mod(vUv.y+offset,width) >= (width-width/6.)){
+            outColor=(outColor*0.8);
+        }
+        outColor[3]=texture(tDiffuse,vUv)[3];
+        fragColor=outColor;
+    }else{
         // 如果启用了绕过，使用原始纹理颜色
-        fragColor = texture(tDiffuse, vUv);
+        fragColor=texture(tDiffuse,vUv);
     }
 }
