@@ -6,6 +6,7 @@
 //   ../immutable
 //   ../node:events
 //   ../jszip
+import Runtime from "scratch-vm-dts/engine/runtime"
 
 declare module 'scratch-vm-dts' {
     export = VirtualMachine;
