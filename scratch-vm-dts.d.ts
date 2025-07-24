@@ -6,8 +6,8 @@
 //   ../immutable
 //   ../node:events
 //   ../jszip
-// import R from "scratch-vm-dts/engine/runtime";
-declare var Runtime:R;
+declare type Runtime = import('scratch-vm-dts/engine/runtime')
+declare var Runtime: typeof import('scratch-vm-dts/engine/runtime')
 declare module 'scratch-vm-dts' {
     export = VirtualMachine;
     import VirtualMachine from "scratch-vm-dts/virtual-machine";
@@ -65,7 +65,7 @@ declare module 'scratch-vm-dts/virtual-machine' {
                 */
             _assetsLoadProgress: Progress;
             extensionManager: ExtensionManager;
-            securityManager: import("./extension-support/tw-security-manager");
+            securityManager: import("scratch-vm-dts/extension-support/tw-security-manager");
             /**
                 * Handle a Blockly event for the current editing target.
                 * @param {!Blockly.Event} e Any Blockly event.
@@ -103,7 +103,7 @@ declare module 'scratch-vm-dts/virtual-machine' {
                             IRGenerator: typeof import("./compiler/irgen.js").IRGenerator;
                             ScriptTreeGenerator: typeof import("./compiler/irgen.js").ScriptTreeGenerator;
                             Thread: typeof import("./engine/thread.js");
-                            execute: (sequencer: Sequencer, thread: import("./engine/thread.js")) => void;
+                            execute: (sequencer: Sequencer, thread: import("scratch-vm-dts/engine/thread.js")) => void;
                     };
             };
             _projectProcessingUniqueId: number;
