@@ -7,8 +7,9 @@
 //   ../node:events
 //   ../jszizp
 //monaco似乎不能处理import…from
-declare type Runtime = import("scratch-vm-dts/engine/runtime")
-declare var Runtime:typeof import("scratch-vm-dts/engine/runtime");
+declare type Runtime = import("scratch-vm-dts/engine/runtime");
+declare var Runtime: typeof import("scratch-vm-dts/engine/runtime");
+
 declare module 'scratch-vm-dts' {
     export = VirtualMachine;
     import VirtualMachine = require("scratch-vm-dts/virtual-machine");
