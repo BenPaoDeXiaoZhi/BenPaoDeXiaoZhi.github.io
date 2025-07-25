@@ -17,7 +17,8 @@ declare module 'scratch-vm-dts' {
 
 declare module 'scratch-vm-dts/virtual-machine' {
     export = VirtualMachine;
-    import Target = require('scratch-vm-dts/engine/target');
+    //import Target = require('scratch-vm-dts/engine/target');  //我发现require也无法使用
+    var Target: typeof import('scratch-vm-dts/engine/target')
     import Sequencer = require('scratch-vm-dts/engine/sequencer');
     namespace Blockly{
             class Event{
