@@ -5,9 +5,10 @@
 //   ../format-message
 //   ../immutable
 //   ../node:events
-//   ../jszip
-import R from "scratch-vm-dts/engine/runtime"
-declare type Runtime = import('scratch-vm-dts/engine/runtime')
+//   ../jszizp
+//monaco似乎不能处理import…from
+declare var R=import("scratch-vm-dts/engine/runtime")
+declare type Runtime = R
 declare var Runtime:typeof R;
 declare module 'scratch-vm-dts' {
     export = VirtualMachine;
