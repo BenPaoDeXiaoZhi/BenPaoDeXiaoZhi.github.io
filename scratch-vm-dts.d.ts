@@ -6,8 +6,9 @@
 //   ../immutable
 //   ../node:events
 //   ../jszip
+import R=require("scratch-vm-dts/engine/runtime")
 declare type Runtime = import('scratch-vm-dts/engine/runtime')
-declare var Runtime:Runtime;
+declare var Runtime:typeof R;
 declare module 'scratch-vm-dts' {
     export = VirtualMachine;
     import VirtualMachine = require("scratch-vm-dts/virtual-machine");
