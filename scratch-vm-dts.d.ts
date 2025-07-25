@@ -10,13 +10,13 @@ declare type Runtime = import('scratch-vm-dts/engine/runtime')
 declare var Runtime: typeof import('scratch-vm-dts/engine/runtime')
 declare module 'scratch-vm-dts' {
     export = VirtualMachine;
-    import VirtualMachine from "scratch-vm-dts/virtual-machine";
+    import VirtualMachine = require("scratch-vm-dts/virtual-machine");
 }
 
 declare module 'scratch-vm-dts/virtual-machine' {
     export = VirtualMachine;
-    import Target from 'scratch-vm-dts/engine/target';
-    import Sequencer from 'scratch-vm-dts/engine/sequencer';
+    import Target = require('scratch-vm-dts/engine/target');
+    import Sequencer = require('scratch-vm-dts/engine/sequencer');
     namespace Blockly{
             class Event{
             }
