@@ -23,7 +23,7 @@ const update = ({ vm, registerSettings}) => {
                                 },
                                 onBlur(e){
                                   console.log(e)
-                                  load(e.target.value,true);
+                                  load.call(mgr,e.target.value,true);
                                 },
                         },
                       value: "",
