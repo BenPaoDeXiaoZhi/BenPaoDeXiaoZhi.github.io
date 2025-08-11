@@ -21,7 +21,8 @@ const update = ({ vm, registerSettings}) => {
                                 onPressEnter: (e) => {
                                   e.target.blur();
                                 },
-                                onBlur: (e) => {
+                                onBlur(e){
+                                  console.log(e)
                                   load(e.target.value,true);
                                 },
                         },
