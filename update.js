@@ -9,9 +9,8 @@ const update = ({ vm, registerSettings}) => {
                 key: "plugin-upadte-extension",
                 label: "更新特定扩展",
                 description: "输入id或url，更新扩展",
-                items: [],
-            },
-            {
+                items: [
+                        {
                 key: "pluginFileUrl",
                 label: "url or id",
                 type: "input",
@@ -27,7 +26,9 @@ const update = ({ vm, registerSettings}) => {
               },
               value: "",
               autoSave: false,
-            },
+            }
+                ],
+            }
         ],
         "",)
         return {
