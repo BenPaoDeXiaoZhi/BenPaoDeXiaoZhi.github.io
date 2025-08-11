@@ -1,5 +1,5 @@
 const update = ({ vm, registerSettings}) => {
-	console.log(vm.runtime)
+	console.log(vm.runtime.extensionManager)
 	const register = registerSettings("更新特定扩展",
         "plugin-upadte-extension",
         [
