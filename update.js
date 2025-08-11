@@ -19,7 +19,7 @@ const update = ({ vm, registerSettings}) => {
               inputProps: {
                 placeholder: "https://m.ccw.site/plugins/...",
                 onPressEnter: (e) => {
-                  (e.target as HTMLInputElement).blur();
+                  e.target.blur();
                 },
                 onBlur: (e) => {
                   load(e.target.value,true);
