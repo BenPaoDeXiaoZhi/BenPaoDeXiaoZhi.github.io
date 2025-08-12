@@ -1,7 +1,7 @@
 const update = ({ vm, registerSettings}) => {
         console.log(vm.runtime.extensionManager)
         const mgr=vm.runtime.extensionManager
-        const load = mgr.loadExtensionURL
+        const load = mgr.loadExternalExtensionById
         console.log(load)
         const register = registerSettings("更新特定扩展",
         "plugin-upadte-extension",
