@@ -24,6 +24,7 @@ const update = ({ vm, registerSettings}) => {
                                 onBlur(e){
                                   console.log(e)
                                   load.call(mgr,e.target.value,true);
+alert(`扩展${e.target.value}已更新`)
                                 },
                         },
                       value: "",
