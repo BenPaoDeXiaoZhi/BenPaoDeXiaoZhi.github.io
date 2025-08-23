@@ -3,11 +3,10 @@ xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink"
 width="100" height="100">
 
-<script>alert(1)</script>
-
 <foreignObject width="100" height="50"
 requiredExtensions="http://www.w3.org/1999/xhtml">
 aaaa
+<script>alert(1)</script>
 <img src="https://m.ccw.site/user_projects_assets/3b9d82418377858b9d35a52c3f95f47c.svg"/>
 </foreignObject>
 </svg>
