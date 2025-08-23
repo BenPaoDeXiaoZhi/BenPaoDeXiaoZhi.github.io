@@ -22,7 +22,7 @@ const update = ({ vm, registerSettings }) => {
                             onBlur(e) {
                                 (async()=>{
                                     console.log(e)
-                                    mgr.loadExtensionURL(await vm.runtime.ccwAPI.getExtensionURLById('spineAnimation'),true)
+                                    mgr.loadExtensionURL(await vm.runtime.ccwAPI.getExtensionURLById(e.target.value),true)
                                     alert(`扩展${e.target.value}已更新`)
                                 })()
                                 
