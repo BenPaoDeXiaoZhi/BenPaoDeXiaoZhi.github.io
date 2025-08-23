@@ -8,8 +8,6 @@ width="100" height="100">
 <foreignObject width="100" height="50"
 requiredExtensions="http://www.w3.org/1999/xhtml">
 aaaa
-<script
-src="javascript:alert(location)" />
-<iframe src="https://www.baidu.com"/>
+<img src="https://m.ccw.site/user_projects_assets/3b9d82418377858b9d35a52c3f95f47c.svg"/>
 </foreignObject>
 </svg>
