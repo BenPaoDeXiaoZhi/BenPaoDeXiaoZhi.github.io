@@ -31,10 +31,10 @@ jobs:
         run: npm ci
 
       - name: Type Check
-        run: npx tsx svelte-kit sync && npx svelte-check --tsconfig ./tsconfig.json
+        run: npm run check
 
       - name: Build
-        run: npx tsx vite build
+        run: npm run build
         env:
           NODE_ENV: production
 
