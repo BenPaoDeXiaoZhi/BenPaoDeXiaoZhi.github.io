@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: Type Check
-        run: npm run check
+        run: npx tsx svelte-kit sync && npx svelte-check --tsconfig ./tsconfig.json
 
   build:
     name: Build
@@ -44,7 +44,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npx tsx vite build
         env:
           NODE_ENV: production
 
@@ -66,7 +66,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npx tsx vite build
         env:
           NODE_ENV: production
 
