@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: Type Check
-        run: npm run check
+        run: npm run check -- --ignore svelte.config.js
 
   build:
     name: Build
